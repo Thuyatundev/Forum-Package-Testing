@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('vendor.forum.master');
-});
+Route::redirect('/','forum');
+// Route::get('/', function () {
+//     return view('vendor.forum.master');
+// })->name('homepage');
 
 Auth::routes();
 
